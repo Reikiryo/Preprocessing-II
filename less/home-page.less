@@ -60,6 +60,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -71,9 +75,23 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone {
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @phone {
+        width: 83%;
+        margin: 2% auto;
+        margin-bottom: 5%;
+
+      }
     }
   }
   .btn {
@@ -87,7 +105,8 @@
     display:none;
   }
 }
-.image-phone {
+.img-phone {
+  border-radius: 10px;
   display:none;
 
   @media @phone {
@@ -100,6 +119,7 @@
   .border();
 
   @media @phone {
+    border-radius: 10px;
     width: 100%;
   }
 } 
