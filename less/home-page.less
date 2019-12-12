@@ -6,16 +6,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    h2 {
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    div {
+      @media @phone {
+        .mediaflex();
+      }
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -59,18 +77,29 @@
     }
   }
   .btn {
-    font-size: 1.8rem;
-    text-align: center;
-    width: 95%;
     margin: 0 auto;
-    color: white;
-    padding: 6% 7%;
-    border-radius: 12px;
-    background-color: rgb(0, 124, 108);
+    .buttons(@button-color, @white)
   }
 }// home
+
+.img-desk {
+  @media @phone {
+    display:none;
+  }
+}
+.image-phone {
+  display:none;
+
+  @media @phone {
+    display: inline-block;
+  }
+}
 
 .intro {
   margin-top: 2%;
   .border();
+
+  @media @phone {
+    width: 100%;
+  }
 } 

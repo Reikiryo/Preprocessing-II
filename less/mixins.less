@@ -3,3 +3,22 @@
 .border() {
     border-bottom: 2px dashed silver;
 }
+
+.buttons(@color,@text-color) {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 95%;
+    color: @text-color;
+    padding: 6% 7%;
+    border-radius: 12px;
+    background-color: @color;
+}
+
+.mediaflex() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* @media @phone {
+      .mediaflex();
+    } */
